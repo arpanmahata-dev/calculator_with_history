@@ -66,4 +66,16 @@ def main():
         else:
             calculate(user_input)
 
-main()
+def main():
+    print('---SIMPLE CALCULATOR (type history, clear, or exit)---')
+    while True:
+        user_input = input("Enter calculation (+ - * /) or command (history, clear, exit): ")
+        if user_input == "exit":
+            print("Good-Bye!!")
+            break
+        elif user_input == "history":
+            show_history()
+        elif user_input == "clear":
+            clear_history()
+        else:
+            calculate(user_input)
